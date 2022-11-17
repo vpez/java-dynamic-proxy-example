@@ -22,4 +22,9 @@ public class SimpleRegistrationService implements RegistrationService {
 
         return false;
     }
+
+    @Override
+    public boolean isRegistered(Participant participant, Event event) {
+        throw new UnsupportedOperationException("Simple registration service cannot respond to this query");
+    }
 }
